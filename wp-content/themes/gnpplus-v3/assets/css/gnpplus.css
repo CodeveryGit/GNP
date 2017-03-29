@@ -1,0 +1,1556 @@
+
+/* RIGHT FIXED SIDEBAR */
+#sidebar-fixed{
+    margin-left: -30px;
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+   PUSH MENU
+   ========================================================================== */
+/**
+ * Here you will find all layout used in the push menu
+ *
+ */
+.push-menu,
+.push-menu-close {
+    width:85px;
+    height:35px;
+    float:left;
+}
+
+.push-menu-close{
+    background-color: #00539e;
+    border-bottom-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    height: 70px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    text-align: right;
+    width: 100%;
+}
+
+.comp-push-menu{
+    margin-top: 25px;
+}
+
+.ion-navicon{
+    font-size: 50px;
+    background-color: #00539e;
+    padding: 0 10px;
+}
+
+.ion-ios7-close-empty:before {
+    margin-top: -15px;
+    font-size: 65px;
+}
+
+.push-menu-close a,
+.push-menu-close a:hover,
+.push-menu-close a:active,
+.push-menu a,
+.push-menu a:hover,
+.push-menu a:active{
+    color: #ffffff;
+}
+
+.pushed-menu-container.active{
+    margin-left: 0px;
+}
+
+.pushed-menu-container{
+    width: 15%;
+    height: 100%;
+    background-color: #3375b1;
+    color: white;
+    margin-left: -25%;
+    position: fixed;
+    transition: 0.5s ease-in-out;
+    z-index: 10;
+}
+
+.pushed-menu-container .push-menu{
+    float: none;
+}
+
+.pushed-menu-container.active > ul,
+.pushed-menu-container > ul{
+    margin-top: 70px;
+    padding: 0px;
+}
+
+.pushed-menu-container.active li,
+.pushed-menu-container li{
+    border-bottom: solid 1px #ffffff;
+    list-style-type: none;
+}
+
+
+.sub-menu .visible li:last-child{
+    border-bottom: none;
+}
+
+.pushed-menu-container.active li > a,
+.pushed-menu-container li > a{
+    color: #ffffff;
+    padding: 10px 0px 10px 40px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.pushed-menu-container.active li > a:hover,
+.pushed-menu-container.active li > a:active,
+.sub-menu.visible .current-menu-item,
+.menu-primary-navigation .current-menu-item{
+    background-color: #00539e;
+}
+
+
+.site-content{
+    margin-right: 0px;
+    transition: 0.5s ease-in-out;
+}
+.site-content.active{
+    margin-left: 35%;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+/**
+ * Here you will find all layout used in the header
+ *
+ * In this section the carousel, branding, top-navigation, top-search
+ * top-buttons, and the push menu
+ *
+ */
+.site-header {
+    position:relative;
+    width:100%;
+}
+.header-container {
+    height:170px;
+    position:fixed;
+    top:0;
+
+
+
+}
+@media only screen and (min-width : 992px) {
+    .header-container {
+        width:970px;
+    }
+    .quote-image{
+        bottom: 20%;
+        color: #FFFFFF;
+        font-size: 28px;
+        padding: 20px;
+        position: absolute;
+        text-transform: uppercase;
+        width: 27%;
+        z-index: 1;
+        font-weight: 700;
+        left:10px;
+    }
+    .quote-image {
+        display: block;
+        font-size: 20px;
+        padding: 5px 5px;
+    }
+    .quote-image a {
+        text-decoration:none;
+        color: #FFF;
+        font-size:20px;
+        line-height:22px;
+    }
+    .header-container-right {
+        display:inline;
+        float:right;
+        margin-right:20px;
+    }
+    .header-right-down {
+        float:right;
+        margin-right:20px;
+    }
+
+}
+@media only screen and (min-width : 1170px) {
+    .header-container {
+        width:1140px;
+        z-index: 1000;
+    // set animation
+    -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+
+    .quote-image {
+        bottom: 5%;
+    }
+    .quote-image a {
+
+        line-height:28px;
+        font-size:24px;
+    }
+    .quote-image a:hover {
+        color: #FFFFFF;
+    }
+    .header-container-right,
+    .header-right-down{
+        margin-right:0;
+    }
+
+}
+.header-container-inner {
+    padding: 20px;
+}
+
+.header-container.sticky {
+    height:170px;
+    position:fixed;
+    top:0;
+
+   background-color: rgba(255, 255, 255, 1);
+    z-index: 1000;
+
+}
+
+
+.header-container.sticky .top-navigation li a {
+    color: #000;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.header-container.sticky .top-search-box {
+    background:  #ccc;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.header-container.sticky .top-search-box input {
+    background:  #ccc;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.header-container .top-search-box {
+    background:  #fff;
+
+}
+
+
+
+/* CAROUSEL
+   ========================================================================== */
+.carousel {
+    width: 100%;
+}
+
+.comp-carousel img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* BRANDING
+   ========================================================================== */
+.branding {
+    width:220px;
+    height:80px;
+    float:left;
+    margin-left:20px;
+}
+.comp-branding img {
+    width:300px;
+    height:108px;
+}
+
+/* TOP-MENU
+   ========================================================================== */
+.top-navigation {
+    float:left;
+    margin-bottom:0;
+}
+.top-navigation a {
+    color:#FFFFFF;
+    font-size:14px;
+    line-height:25px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform:uppercase;
+    font-weight:400;
+}
+/* TOP-BUTTONS
+   ========================================================================== */
+.top-buttons {
+    float:left;
+    margin: -1px 20px 0px 0px;
+}
+.list-social-buttons {
+    margin-bottom:0;
+}
+.list-social-buttons .social-button {
+    width:28px;
+    height:28px;
+    display:inline-block;
+    text-align:right;
+}
+.list-social-buttons .social-button-rss {
+    background-color: #FF6600;
+}
+
+.list-social-buttons .social-button-twitter {
+    background-color: #9AE4E8;
+}
+.list-social-buttons .social-button-facebook {
+    background-color: #3B5998;
+}
+.list-social-buttons li .fa {
+    font-size:28px;
+    color: #FFFFFF;
+}
+/* TOP-SEARCH
+   ========================================================================== */
+.top-search {
+    width:260px;
+    float:left;
+    height:25px;
+    margin-top:-2px;
+}
+.top-search-box {
+/*    background-color: #FFFFFF;*/
+    height:30px;
+}
+.top-search-box .fa {
+    display: inline-block;
+    width: 20px;
+
+    margin: 4px 0px 0px 5px;
+
+    font-size:20px;
+    line-height:20px;
+}
+
+.top-search-box form{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+}
+
+.top-search-box input{
+    border: none;
+    width: 228px;
+    font-size: 17px;
+}
+
+.top-search-box input:focus{
+    border: none;
+    outline: none;
+}
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+/**
+ * Here you will find all layout used in the footer
+ *
+ *
+ *
+ *
+ */
+.site-footer {
+    color: #848289;
+    background-color: #E5E5E6;
+    min-height:200px;
+}
+.site-footer .container {
+    padding:30px;
+}
+.logo-footer img {
+    width:220px;
+    height:auto;
+}
+.address-footer {
+    color:#848283;
+    margin-top:15px;
+}
+
+.site-footer a,
+.site-footer a:hover,
+.site-footer a:active{
+    color: #848289;
+}
+
+.footer-menu-title{
+    font-weight: 700;
+}
+
+.footer-menu-list{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ==========================================================================
+   SIDEBAR
+   ========================================================================== */
+/**
+ * Here you will find all layout used in the footer
+ *
+ *
+ *
+ *
+ */
+.sidebar {
+    padding:20px 20px 0 0;
+}
+.sidebar .block {
+    border:1px solid #C0C0C0;
+}
+/* SIDEBAR MENU ABOUT
+   ========================================================================== */
+.menu-about-menu-container, .menu-news-container {
+    background-color: #30509C;
+    padding:20px;
+}
+.title-menu {
+    color: #FFFFFF;
+    text-transform:uppercase;
+    font-size:24px;
+    font-weight:600;
+    line-height:32px;
+    border-bottom:5px solid #FFFFFF;
+    margin-top:0;
+}
+.menu-about a,
+.menu-news a{
+    color:#FFFFFF;
+}
+.menu-about a:before, .menu-news a:before {
+    font-family: 'Ionicons';
+    top:0;
+    /*    margin-left:-5px;*/
+    content: "\f280"; /* \f0c8 */
+    padding-right: 5px;
+}
+.menu-about .current-menu-item > a,
+.menu-news .current-menu-item > a{
+    font-weight:600;
+}
+
+
+
+.menu-about .current-menu-item > a:before,
+.menu-news .current-menu-item > a:before{
+    font-family: 'Ionicons';
+    top:0;
+    content: "\f16c";
+    padding-right: 5px;
+}
+
+.sub-menu {
+    list-style-type: none;
+    padding-left:20px;
+    display: none;
+}
+.menu-about .current-menu-item > .sub-menu,
+.menu-news .current-menu-item > .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin:0;
+    padding:0;
+}
+
+.visible{
+    display: block;
+}
+/* ==========================================================================
+   CONTENT-PAGE-HOME
+   ========================================================================== */
+/**
+ * Here you will find all layout used in the content-page-home
+ *
+ * In this section the different elements used on the homepage
+ *
+ */
+/* SECTIONS
+   ========================================================================== */
+.section-title h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #FFFFFF;
+    border-bottom:5px solid #FFFFFF;
+    line-height:80px;
+    font-weight:600;
+    margin-bottom:30px;
+}
+.section-footer {
+    text-align: center;
+}
+.link-more-news a{
+    color: #FFFFFF;
+    font-size:24px;
+    font-weight:400;
+    line-height:32px;
+    text-transform:uppercase;
+}
+
+/* GRID ITEMS
+   ========================================================================== */
+.msry-large-block{
+    width: 527px;
+    margin-left: 25px;
+}
+.msry-small-block{
+    width: 252px;
+    margin-left: 24px;
+}
+
+.msry-small-block img
+, .msry-large-block img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+/* SECTION-NEWS
+   ========================================================================== */
+.section-news {
+    background-color: #30509c;
+    padding: 10px 30px
+}
+
+/*
+    IMPORTANT: THE MARGIN -27 IS TO ALIGN WITH TWO BORDERS, RIGHT AND LEFT
+    IF IS 0PX, ONLY LEFT SIDE IS ALIGNED
+*/
+.msry-news-container{
+    margin-left: -27px;
+}
+
+.msry-news-container ul{
+    list-style: none;
+}
+
+.masonry-news-item.comp-media-item-large{
+}
+
+.comp-large{
+    width: 527px;
+    margin-left: 25px;
+    max-width: 95%;
+
+}
+.comp-small{
+    width: 252px;
+    margin-left: 24px;
+}
+
+.masonry-news-item.comp-media-item-small
+, .masonry-news-item.comp-twitter-feed
+, .masonry-news-item.comp-newsletter
+{
+}
+
+.comp-large img{
+    max-width: 100%;
+    height: auto;
+}
+
+.comp-media-item-small img{
+    width: 192px;
+}
+
+.comp-facebook-fanbox{
+/*    height: 508px;*/
+}
+
+.comp-news-items #sidebar{
+    padding: 0;
+}
+
+/* SECTION-BANNER
+   ========================================================================== */
+.section-banner {
+    background-color: #cd3334;
+    padding: 30px
+}
+.comp-banner-items img {
+    width:100%;
+    margin-bottom:15px;
+}
+
+/*
+    IMPORTANT: THE MARGIN -27 IS TO ALIGN WITH TWO BORDERS, RIGHT AND LEFT
+    IF IS 0PX, ONLY LEFT SIDE IS ALIGNED
+*/
+.msry-banner-container{
+    margin-left: -27px;
+}
+
+
+
+.masonry-banner-item.comp-banner-large-item{
+    width: 527px;
+    margin-left: 25px;
+}
+
+
+.masonry-banner-item.comp-banner-small-item{
+    width: 252px;
+    margin-left: 24px;
+}
+
+
+/* SECTION-RESOURCES
+   ========================================================================== */
+.section-resources {
+    background-color: #FFD500;
+    padding: 30px
+}
+.resources-items {
+    margin-bottom:15px;
+}
+.comp-resources-items img {
+    width:100%;
+    margin-bottom: 30px;
+}
+
+.link-more-resources a{
+    color: #999999;
+    font-size:24px;
+    font-weight:400;
+    line-height:32px;
+    text-transform:uppercase;
+}
+/* SECTION-image
+   ========================================================================== */
+.section-image img {
+    width:100%;
+    height:auto;
+}
+
+.section-image{
+    position: relative;
+}
+
+
+
+
+/* ==========================================================================
+   CONTENT-SINGLE
+   ========================================================================== */
+/**
+ * Here you will find all layout used in the content-single
+ *
+ * In this section the different elements used on the post pages
+ *
+ */
+.post, .type-resources, .board_member {
+    margin:20px;
+    padding: 20px;
+    border: 1px solid #C0C0C0;
+}
+.publication-date {
+    color:#30509C;
+    font-size:16px;
+}
+.title-post {
+    font-size: 40px;
+    color: #999999;
+    border-bottom:5px solid #30509C;
+    line-height:48px;
+    font-weight:600;
+    padding-bottom:15px;
+    margin-bottom:30px;
+}
+/* ==========================================================================
+   CONTENT-SINGLE-RESOURCES
+   ========================================================================== */
+.resources-meta {
+    padding:0 20px;
+}
+.back-to-previous {
+    padding:20px 20px 10px;
+}
+.title-post-resources {
+    border-color:#ffd500;
+}
+.resources .comp-share-buttons li {
+    background-color: #999999;
+}
+.resources .comp-share-buttons li:hover {
+    background-color: #FFD500;
+}
+
+.meta-section {
+    background-color:#e5e5e6;
+    float:left;
+    width:100%;
+    padding-bottom:15px;
+    margin-bottom:15px;
+}
+.meta-list {
+    width:75%;
+    float:left;
+}
+
+.meta-list-wide {
+    width:100%;
+    margin-bottom: 20px;
+    /*    float:left;*/
+}
+.meta-list li, .meta-list-wide li {
+    padding:15px 0;
+
+
+}
+.meta-label {
+    font-weight: 600;
+    width: 35%;
+    float:left;
+    font-size:12px;
+
+}
+.meta-value {
+    width:65%;
+    float:left;
+    font-size:12px;
+}
+.icon-gnp {
+    font-size:24px;
+    line-height:24px;
+    top:4px;
+    position:relative;
+}
+.back-to-previous a {
+    color:#999999;
+    font-size:12px;
+    line-height:24px;
+}
+.resources-cover {
+    width:25%;
+    float:left;
+}
+.resources-cover-wrapper {
+    padding:15px;
+    float:left;
+}
+.resources-cover img {
+    width:100%;
+    height:auto;
+}
+/* ==========================================================================
+   CONTENT-PAGE
+   ========================================================================== */
+/**
+ * Here you will find all layout used in the content-single
+ *
+ * In this section the different elements used on the post pages
+ *
+ */
+.type-page {
+    margin:20px;
+    padding: 20px;
+    border: 1px solid #C0C0C0;
+}
+/* ==========================================================================
+   CONTENT-ARCHIVE
+   ========================================================================== */
+/**
+ * Here you will find all layout used in the content-single
+ *
+ * In this section the different elements used on the post pages
+ *
+ */
+.overview-archive {
+    margin:20px;
+    padding: 20px;
+    border: 1px solid #C0C0C0;
+    box-sizing: border-box;
+    float: left;
+    width:95%;
+}
+.header-archive {
+    border-bottom:5px solid #ffd500;
+    display:block;
+    margin-bottom:30px;
+}
+.page-title {
+    margin:0 0 20px ;
+    font-size:40px;
+    font-weight:600;
+    color:#999999;
+}
+.filter-results {
+    font-size:16px;
+    color:#999999;
+    margin-bottom:20px;
+}
+.filter-results-list,
+.filter-results-list-item{
+    display:inline-block;
+}
+
+.filter-results-list-item {
+    background-color: #999999;
+    color: #FFFFFF;
+    padding:0px 5px;
+    margin: 10px 10px 0 0;
+}
+/* ==========================================================================
+   CONTENT-CATEGORY
+   ========================================================================== */
+/**
+ * Here you will find all layout used in the content-single
+ *
+ * In this section the different elements used on the post pages
+ *
+ */
+.title-page {
+    color:#999999;
+}
+.category-list-container,
+.overview-search{
+    padding:0 20px;
+    margin:0  20px;
+    float:left;
+}
+.category-list-item {
+    background-color:#FFFFFF;
+    margin-bottom:30px;
+    border-bottom: 2px solid #e5e5e6;
+    min-height: 160px;
+}
+.header-category {
+    border-bottom:5px solid #30509c;
+    display:block;
+    margin-bottom:30px;
+}
+.image-category {
+    width:150px;
+    min-height:150px;
+}
+/* ==========================================================================
+   BLOCKS
+   ========================================================================== */
+/**
+ * Here you will find all layout used blocks
+ *
+ */
+.block {
+    background-color: #FFFFFF;
+    padding:10px;
+    margin-bottom:15px;
+}
+.title-block h2 {
+    color: #30509C;
+    text-transform:uppercase;
+    font-size:24px;
+    font-weight:600;
+    line-height:32px;
+    border-bottom:5px solid #30509C;
+    margin-top:0;
+}
+/* BLOCK-TWITTER
+   ========================================================================== */
+.item-twitter {
+    color: #999999;
+    margin-bottom:15px;
+}
+.twitter-time {
+    color: #666666;
+}
+.twitter-footer {
+    text-align:center;
+}
+.twitter-footer a{
+    text-transform: uppercase;
+    color: #666666;
+    font-size:13px;
+    font-weight:600;
+}
+/* BLOCK-NEWSLETTER
+   ========================================================================== */
+.newsletter-intro {
+    color: #30509C;
+}
+.newsletter-label {
+    margin:5px 0 3px;
+    font-size:13px;
+    color: #30509C;
+}
+.form-field {
+    border:1px solid #CCCCCC;
+    width:100%;
+    height:25px;
+}
+.link-subscribe {
+    margin-top:5px;
+    text-decoration:underline;
+}
+.submit-link {
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+}
+/* BLOCK-RESOURCES-SEARCH
+   ========================================================================== */
+.block-resources-search {
+    background-color: #E5E5E6;
+}
+.search {
+    padding:10px;
+    background-color:#FFFFFF;
+    margin:10px 0;
+    color:#333333;
+}
+.fa-search {
+    margin-right:15px;
+}
+/* BLOCK-RESOURCES-FILTER
+   ========================================================================== */
+.sidebar .block-resources {
+    padding:0;
+    border:0px;
+}
+.block-resources-publication-type .title-filter {
+    text-transform:uppercase;
+    margin:0;
+    font-size:18px;
+    font-weight:600;
+    color:#FFFFFF;
+    background-color:#30509C;
+    padding:10px;
+    border-bottom:1px solid #FFFFFF;
+}
+
+
+.block-resources-publication-country .title-filter {
+    text-transform:uppercase;
+    margin:0;
+    font-size:18px;
+    font-weight:600;
+    color:#FFFFFF;
+    background-color:#ffd500;
+    padding:10px;
+    border-bottom:1px solid #FFFFFF;
+}
+
+.block-resources-publication-region .title-filter {
+    text-transform:uppercase;
+    margin:0;
+    font-size:18px;
+    font-weight:600;
+    color:#FFFFFF;
+    background-color:#cd3334;
+    padding:10px;
+    border-bottom:1px solid #FFFFFF;
+}
+
+
+.list-resources li {
+    background-color:#7390D4;
+    padding:10px 10px 10px 10px;
+    color:#FFFFFF;
+    border-bottom:1px solid #FFFFFF;
+}
+.list-resources .list-label {
+    position:relative;
+    left:20px;
+}
+.list-resources .list-label-active {
+    left:0px;
+}
+
+.title-filter-country {
+    background-color:#FFD500;
+}
+
+.list-publication-country li {
+    background-color:#FFE047;
+}
+.title-filter-region {
+    background-color:#cd3334;
+}
+.list-publication-region li {
+    background-color:#DB6B6B;
+}
+/* ==========================================================================
+   MEDIA ITEM
+   ========================================================================== */
+/**
+ * Here you will find all layout used in the media blocks
+ *
+ */
+.media-item {
+    margin-bottom:15px;
+}
+.media-item img {
+    width:100%;
+}
+.media-body {
+    background-color: #FFFFFF;
+    padding:10px 20px;
+}
+.media-date {
+    color: #999999;
+}
+.title-media {
+    font-weight:600;
+}
+.title-media a {
+    color: #999999;
+}
+.media-excerpt {
+    color: #999999;
+}
+.media-read-more {
+    text-decoration:underline;
+    color: #30509C;
+}
+/* MEDIA-ITEM-LARGE
+   ========================================================================== */
+.title-media-large {
+    margin-top:5px;
+    font-size:24px;
+    font-weight:600;
+    line-height:28px;
+}
+/* MEDIA-ITEM-SMALL
+   ========================================================================== */
+.title-media-small {
+    margin-top:5px;
+    font-size:16px;
+    font-weight:600;
+    line-height:20px;
+}
+/* MEDIA-ITEM-RESOURCES
+   ========================================================================== */
+.media-item-resources {
+    padding-bottom:15px;
+    border-bottom:2px solid #e5e5e6;
+    min-height:160px;
+}
+.media-item-resources .image-resources {
+    width:30%;
+}
+.media-item-resources img {
+    width:100%;
+    height:auto;
+}
+.media-item-resources .media-body {
+    margin-left:10px;
+    padding:0px 0px 0px 15px;
+}
+.media-item-resources .label-resources{
+    color: #999999;
+}
+.media-item-resources .title-resources a {
+    font-weight:600;
+    margin-bottom:10px;
+    color: #000000;
+}
+/* ==========================================================================
+   SHARE BUTTONS
+   ========================================================================== */
+/**
+ * Main style for comp-share-buttons
+ *
+ */
+.comp-share-buttons {
+    margin-top:30px;
+}
+.comp-share-buttons li {
+    background-color: #30509C;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding:5px;
+    margin-right:5px;
+}
+.comp-share-buttons .fa {
+    color: #FFFFFF;
+    font-size:20px;
+}
+.comp-share-buttons li:hover {
+    background-color: #cd3334;
+}
+/* ==========================================================================
+   SHARE BUTTONS
+   ========================================================================== */
+/**
+ * Main style pagination, code is in libs wbb-pagination
+ *
+ */
+.pagination{
+    display:block;
+    padding:15px 0;
+}
+.list-pagination {
+    text-align:center;
+    width:100%;
+}
+.list-pagination li{
+    display:inline;
+    background-color: #30509c;
+    color:#FFFFFF;
+    padding:10px 15px;
+    margin:0 5px;
+}
+.list-pagination li a{
+    color:#FFFFFF;
+}
+
+/* NEWSLETTER FORM */
+.newsletter-form input[type="text"]{
+    border: 0 none;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 3px;
+    width: 215px;
+}
+
+#resources_search{
+    border: 0 none;
+    font-size: 14px;
+
+    margin-top: 3px;
+    width: 185px;
+}
+
+.fa-times{
+    cursor: pointer;
+}
+
+/* SLIDESHOWS
+*******************************************************************************/
+.slideshow-main-container{
+    height: 400px;
+    width: 100%;
+
+    background-color: lightsteelblue;
+}
+
+.slideshow-text-container{
+    padding: 30px 20px;
+}
+
+.slideshow-img-container img{
+    width: 100%;
+    max-height: 250px;
+}
+
+.wide-left{
+    left:0px !important;
+    width: 7% !important;
+}
+
+.wide-right{
+    left:495px !important;
+    width: 7% !important;
+}
+
+.carousel.carousel-fade .item {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    opacity:0;
+}
+
+.carousel.carousel-fade .active.item {
+    opacity:1;
+}
+
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev {
+    left: 0;
+    z-index: 1;
+}
+
+.carousel.carousel-fade .carousel-control {
+    z-index: 3;
+}
+
+.carousel-control {
+    height: 400px;
+    padding-top: 145px;
+}
+
+.carousel-control.right {
+    background-image: none !important;
+}
+
+.carousel-control.left {
+    background-image: none !important;
+}
+.carousel-control img {
+    height: 45px;
+    width: 40px;
+    display:none;
+}
+
+.carousel-inner > .item {
+    height: 400px;
+    overflow: hidden;
+
+}
+
+
+.form-horizontal .form-group{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.control-label, .login-input{
+    margin-left: 20px;
+}
+
+
+.error{
+    border: solid 1px #c00;
+    padding: 5px;
+    color: #c00;
+    background: #ffebe8;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.entry-content img {
+    max-width:100%;
+    height:auto;
+}
+
+
+/* NEW TOP NAVIGATION MENU */
+.header-navigation-menu{
+    float: left;
+    margin-left: 60px;
+    margin-top: 55px;
+}
+
+.top-navigation li{
+    float: left;
+    margin-right: 15px;
+
+}
+
+
+
+.header-donate-button{
+    float: right;
+    margin-top: 47px;
+}
+.box-blue {
+    background: none repeat scroll 0 0 #30509c;
+    color: #fff;
+    display: block;
+    height: 40px;
+    padding: 8px 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: left;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    width: 155px;
+}
+
+.box-blue:hover{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+/*==================================================
+=           Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+    .site-content{
+        margin-left: 0px;
+    }
+
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .site-header {
+        height: 180px;
+        background-color: #30509c;
+    }
+
+    .top-search-box {
+        background-color: #FFFFFF;
+        height:32px;
+        border: solid 1px #30509c;
+    }
+
+    .pushed-menu-container {
+        width: 50%;
+        margin-left: -55%;
+    }
+
+    .push-menu{
+        width: 35px;
+    }
+
+    .comp-push-menu{
+        margin-top: 0px;
+    }
+
+    .pushed-menu-container.active li > a{
+        padding-left: 20px;
+    }
+
+    .branding {
+        float: left;
+        height: 80px;
+        margin-left: 20px;
+        width: 220px;
+    }
+
+    .block-large-slideshow,
+    .carousel,
+    .top-buttons,
+    .image-category.pull-left,
+    .resources-cover{
+        display: none;
+    }
+
+
+
+    .section-title h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+
+    .list-pagination li a,
+    .list-pagination li .current {
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 8px;
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-top: 8px;
+    }
+
+    .pagination .list-pagination li {
+        display: inline-block;
+        padding: 0px;
+    }
+
+    .meta-label{
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+    /*.anbi-logo {*/
+        /*margin-top:15px;*/
+        /*float:left;*/
+    /*}*/
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    .single-post .post{
+        border: none;
+        margin: 20px 0;
+    }
+
+    .sidebar{
+        padding-right: 0px;
+    }
+
+    .comp-large {
+        margin-left: 24px;
+        width: 252px;
+        max-width: none;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .site-header {
+        height: 100%;
+    }
+
+    .block-large-slideshow,
+    .carousel,
+    .top-buttons,
+    .image-category.pull-left,
+    .resources-cover{
+        display: block;
+    }
+
+    .pushed-menu-container {
+        width: 30%;
+    }
+
+    .push-menu{
+        width: 85px;
+    }
+
+    .comp-push-menu{
+        margin-top: 25px;
+    }
+
+    .pushed-menu-container.active li > a{
+        padding-left: 40px;
+    }
+
+    .branding {
+        float: left;
+        height: 108px;
+        margin-left: 0px;
+        width: 300px;
+        margin-top:30px;
+    }
+
+    .carousel-inner > .item {
+        height: 100%;
+    }
+
+
+
+    .top-search-box {
+        background-color: #FFFFFF;
+        height:30px;
+        border: none;
+    }
+
+    .section-title h2 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 80px;
+        margin-bottom: 30px;
+    }
+
+
+
+    .list-pagination li a,
+    .list-pagination li .current {
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+    }
+
+    .meta-label{
+        width: 35%;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    .carousel-inner > .item{
+        height: 400px;
+    }
+
+    .section-title h2 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 80px;
+        margin-bottom: 30px;
+    }
+
+
+    .pushed-menu-container {
+        width: 15%;
+    }
+
+
+
+
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+.carousel.carousel-fade .item {
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    opacity:0;
+}
+
+.carousel.carousel-fade .active.item {
+    opacity:1;
+}
+
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+/* REMOVE NEWS RELEASE FOR FILTER */
+.filter-4036{
+    display: none;
+
+}
+
+/* POSSIBLE SOLUTION TO MASONRY ERROR IN HOME PAGE.  */
+.media-item-large .block-img-item-container{ min-height: 407px; }
+.media-item-small .block-img-item-container{ min-height: 192px; }

@@ -1,0 +1,29 @@
+.admin_widget_container label{
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.admin_widget_container select[name=post_id]{
+    width: 100%;
+}
+.admin_widget_container select[name=size]{
+    width: 75px;
+}
+
+.admin_widget_container hr{
+    margin: 5px 0px;
+}
+
+.banner_target_container label{
+    display: block;
+    margin-top: 15px;
+}
+.banner_target_container input[type='text']{
+    width: 350px;
+}
+.banner_target_container input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}

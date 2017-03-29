@@ -1,0 +1,1548 @@
+@mixin flexbox
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+@mixin align-items($value: stretch)
+  -webkit-box-align: $value
+  -webkit-align-items: $value
+  -moz-align-items: $value
+  align-items: $value
+@mixin justify-content($value: flex-start)
+  -webkit-box-pack: $value
+  -webkit-justify-content: $value
+  -moz-justify-content: $value
+  justify-content: $value
+@mixin flex-wrap($value: nowrap)
+  -webkit-flex-wrap: $value
+  -moz-flex-wrap: $value
+  flex-wrap: $value
+
+body
+  font-family: "LatoWeb", sans-serif
+form
+  display: inline
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+  padding: 0
+header
+  display: flex
+  justify-content: space-between
+  min-height: 110px
+  align-items: center
+.navbar-default
+  background-color: #fff
+.list-collapse
+  padding: 0
+.navbar-fixed-top
+  min-height: 110px
+  border-bottom: 0
+  font-size: 16px
+  font-weight: 400
+  color: #000
+  margin-bottom: 0
+  padding: 2% 0 0
+.owl-carousel .owl-item img.lazyOwl
+  max-width: 100%
+.navbar-header
+  .navbar-brand
+    height: 100%
+    padding: 0 0 0 15px
+    img
+      width: 100%
+      display: inline-block
+      margin-left: 15px
+      max-width: 167px
+.resources-main-cont
+  padding: 0 15px
+  .recourcse-main
+    .row
+      margin: 0
+#bs-example-navbar-collapse-1
+  max-height: none
+  .collapse-search-form
+    display: none
+
+ul.nav.navbar-nav
+  width: 100%
+  @include flexbox
+  @include justify-content(center)
+  @include flex-wrap(wrap)
+  .active>a,.active>a:hover,.active>a,.active>a:active,.active>a,.active>a:visited
+    background-color: #fff
+.navbar-default .navbar-nav > li > .dropdown-toggle
+  color: #000
+  padding: 15px 12px
+.navbar-default .navbar-nav > li > a
+  color: #000
+  padding: 15px 16px
+.navbar-default .navbar-nav > li > a:hover
+  color: #17509D
+.donate_search
+  text-align: right
+  a
+    text-decoration: none
+  a:focus, a:hover
+    color: #fff
+.donate
+  color: #F3F3F3
+  background-color: #CF352D
+  font-weight: 700
+  font-size: 16px
+  border-radius: 0
+  border: 0
+  padding: 12px 15px
+  margin: 0 20px 0 0
+  span
+    margin-right: 10px
+.donate:hover
+  color: #F3F3F3
+  background-color: #CF352D
+  font-weight: 700
+  font-size: 17px
+  border-radius: 0
+  border: 0
+.navbar-default
+  .search-form
+    position: relative
+    float: right
+    min-width: 190px
+    z-index: 100
+  .search
+    padding: 0
+  .header_form
+    position: relative
+    display: inline
+    width: 40px
+    height: 40px
+  .head_input
+    position: absolute
+    width: 0
+    top: 0
+    right: 40px
+    height: 100%
+    border: 0
+  .head_input.is-open
+    width: 150px
+    background-color: #e9edf5
+    padding-left: 20px
+    transition: width 0.3s linear 0s
+  .head_search
+    width: 40px
+    height: 40px
+    border: 0
+    background-color: #17509D
+    color: #fff
+.link-hover:hover
+  opacity: 0.8
+.navbar-toggle
+  background-color: #FFD400
+  width: 60px
+  height: 60px
+  border: 0
+  border-radius: 0
+  padding: 0
+  margin: 0 10px 0 0
+  position: absolute
+  top: 20px
+  right: 0
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
+  background-color: #FFD400
+.navbar-default .navbar-toggle .icon-bar
+  background-color: #fff
+.navbar-toggle .icon-bar
+  margin: 0 auto
+//-----------------------end header---------------
+.main_photo
+  background: url("../img/main_photo.jpg") 50%
+  background-size: cover
+  //margin-top: 110px
+  padding-bottom: 107px
+  .container.head_input
+    padding-left: 6px
+  .row
+    margin: 0
+  .white-line
+    width: 100%
+    height: 3px
+    background-color: rgba(255, 255, 255, 0.48)
+    margin-bottom: 102px
+  .photo-title
+    p
+      font-weight: 700
+      font-size: 39px
+      color: #fff
+      margin: 0
+  .photo-link
+    margin: 38px 0
+    a
+      font-weight: 700
+      font-size: 30px
+      color: #fff
+      padding: 15px 25px 15px 20px
+      text-decoration: none
+      span
+        margin-right: 17px
+  .blue
+    background-color: #17509D
+  .yellow
+    background-color: #FFD401
+  .red
+    background-color: #CF352D
+//-------------------------end main photo------------------------------
+//--------------------------news&updates-----------------------------------------
+.news-updates
+  padding: 60px 0 80px 0
+  background-color: #e9edf5
+  a
+    color: #000
+    text-decoration: none
+  li
+    list-style: none
+.news-title
+  padding: 6px 0 21px 15px
+  p
+    font-size: 30px
+    font-weight: 700
+.news-articles
+  .row
+    margin: 0
+    #sidebar
+      padding: 0
+.article1
+  .image
+    height: 0
+    background-position: 50%
+    background-size: cover
+    padding-top: 87%
+.article2
+  margin: 0 0 20px 20px
+  background-color: #ffffff
+  .image
+    background-size: cover
+    height: 0
+    padding-top: 67%
+.desc
+  height: 120px
+  font-size: 18px
+  font-weight: 700
+  background-color: #ffffff
+  padding: 15px
+  line-height: 1.6
+  p
+    margin: 0
+//---------------------end news&updates------------------------
+
+//----------------------red form ---------------------------
+.newsletter-form input[type="text"]
+  border: 0 none
+  font-size: 12px
+  margin: 0
+  width: 100%
+  height: 100%
+  padding: 0 0 0 10px
+.red-form
+  text-align: center
+  background-color: #CF352E
+  padding: 47px 0 75px
+  width: 100%
+  margin: 0
+  .red-form-title
+    font-size: 30px
+    font-weight: 700
+    color: #fff
+  .red-form-desc
+    font-size: 18px
+    font-weight: 400
+    color: #fff
+    padding-bottom: 22px
+    letter-spacing: -0.2px
+  input
+    margin: 0 9px
+    font-size: 17px
+  .inputfield
+    width: 250px
+    height: 50px
+    border: 0
+    padding: 0 0 0 22px
+  .subscribe
+    width: 120px
+    height: 50px
+    background-color: #5169ab
+    color: #fff
+    border: 0
+//----------------------end red form ---------------------------
+//-----------------------campaigns---------------------
+.campaigns
+  background-color: #e9edf5
+  padding: 60px 0 77px
+  .row
+    margin: 0
+    a
+      text-decoration: none
+.campaigns-big
+  float: right
+  text-align: center
+  .com-big
+    background-color: #fff
+    margin: 0 7px
+    padding: 47px
+    .com-link
+      max-width: 400px
+      margin: 0 auto
+      img
+        width: 100%
+.campaigns-small
+  .com-link-small
+    max-width: 275px
+    margin: 0 13px 23px 3px
+  img
+    width: 100%
+.campaigns-right
+  .com-link-small
+    max-width: 275px
+    margin: 0 0 23px 13px
+  img
+    width: 100%
+    text-align: center
+  .com-big
+    padding: 30px
+    background-color: #fff
+    img
+      width: 100%
+.small-container
+  padding: 0 35px
+  .campaigns-big-s
+    text-align: center
+    .com-big
+      background-color: #ffffff
+      padding: 8%
+      img
+        width: 100%
+  .campaigns-small-l
+    padding: 0 5px 0 0
+  .campaigns-small-r
+    padding: 0 0 0 5px
+.com-link-small-s
+  padding-top: 10px
+  img
+    width: 100%
+//-----------------------end campaigns---------------------------
+
+//------------------------Resources--------------------------
+.resources
+  text-align: center
+  background-color: #FFD400
+  padding: 42px 0 17px
+  .news-title
+    color: #fff
+    .row
+      margin: 0
+.res-cont
+  width: 90%
+  margin: 0 auto
+#owl-demo .item
+  margin: 5px
+  img
+    width: 100%
+    max-width: 221px
+.owl-pagination
+  display: none
+.owl-theme
+  .owl-controls
+    .owl-buttons
+      .owl-prev
+        background-image: url("../img/left.png")
+        position: absolute
+        top: 143px
+        left: -45px
+.owl-theme
+  .owl-controls
+    .owl-buttons
+      .owl-next
+        background-image: url("../img/right.png")
+        position: absolute
+        top: 143px
+        right: -45px
+.owl-theme
+  .owl-controls
+    .owl-buttons
+      div
+        background: none
+        padding: 18px 12px
+        opacity: 1
+.more_resources
+  margin: 38px 0
+  a
+    text-decoration: none
+    p
+      width: 160px
+      height: 50px
+      margin: 0 auto
+      background-color: #fff
+      padding-top: 15px
+      color: #17509E
+      font-weight: 700
+      font-size: 16px
+//------------------------end Resources--------------------------
+//------------------------footer--------------------------------------
+.footer
+  height: 110px
+  .footer-l
+    padding: 23px 0 0 15px
+    display: inline-block
+
+
+    .navbar-header
+      padding: 0
+    .anbi
+      margin-left: 32px
+  .footer-r
+    float: right
+    padding: 34px 15px 0 0
+    font-size: 16px
+    .ssba-wrap
+      display: inline-block
+      margin-left: 15px
+//-----------end footer-----------------
+//-------------------------about page-------------------
+
+.main-image
+  margin-top: 110px
+  padding-bottom: 9px
+  .white-line
+    width: 100%
+    height: 3px
+    background-color: rgba(255, 255, 255, 0.48)
+    margin-bottom: 267px
+  .page-title
+    font-size: 50px
+    font-weight: 700
+    color: #fff
+    text-shadow: 2px 1px 3px #81878A
+    padding: 29px 0 20px
+    margin: 0
+    p
+      font-size: 50px
+      font-weight: 700
+      margin: 0
+.about-image
+  //background: url("/wp-content/themes/new_theme/img/about-image.jpg") 50%  20%
+  background-position: 50%
+  background-size: cover
+.about-gnp
+  padding: 66px 0 30px 0
+  .about-left
+    padding: 0 15px
+  .title-article
+    font-size: 30px
+    font-weight: 700
+    padding-bottom: 5px
+  .about-desc
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: -0.1px
+    line-height: 28px
+    word-wrap: break-word
+    padding-bottom: 20px
+    p
+      margin-bottom: 28px
+      font-size: 16px
+      font-weight: 400
+      letter-spacing: -0.1px
+      line-height: 28px
+    form
+      p
+        input
+          height: 50px
+          border: 1px solid #c1c1c1
+          padding: 0 0 0 15px
+        input[type="submit"]
+          width: 120px
+          height: 50px
+          background-color: #5169AB
+          color: #fff
+          border: 0
+          padding: 0
+          font-size: 17px
+          border-radius: 0
+        textarea
+          border: 1px solid #c1c1c1
+          padding: 0 0 0 15px
+  .download-book
+    padding: 15px
+    background-color: #F0F4FA
+    font-size: 16px
+    font-weight: 400
+    .row
+      padding: 0 15px
+    img
+      max-width: 141px
+      height: auto
+    .book-title
+      padding: 2px 0 0 5px
+      .meta-label,.meta-value
+        font-size: 16px
+        font-weight: 400
+        float: none
+      .book-p
+        margin-bottom: 20%
+      .button-down
+        text-align: center
+        .downloud-link
+          background-color: #17509E
+          color: #fff
+          padding: 10%
+          text-decoration: none
+          display: block
+          width: 80%
+
+    .book-desc
+      padding: 2px 0 0 4px
+      a
+        text-decoration: none
+        color: #17509E
+  .list-link
+    padding: 0
+    width: 301px
+    float: right
+    a
+      font-size: 16px
+      padding: 9px 18px
+      text-decoration: none
+      border-radius: 0
+      background-color: #F0F4FA
+      border: 0
+      margin: 5px 0
+      color: #17509D
+    a:hover,a:focus
+      color: #fff
+      text-decoration: none
+      background-color: #17509E
+    span
+      margin: 0 14px 0 0
+      font-size: 10px
+      color: #17509D
+    a:hover
+      span
+        color: #fff
+.sidebar
+  padding: 0
+  .menu-footer-who-we-are-container
+    width: 301px
+    float: right
+    li.menu-item
+      border-radius: 0
+      background-color: #F0F4FA
+      border: 0
+      margin: 5px 0
+      a
+        font-size: 16px
+        text-decoration: none
+        color: #17509D
+        display: block
+        padding: 9px 18px
+      a:before
+        font-family: 'Glyphicons Halflings'
+        content: "\e072"
+        padding: 0 15px 0 0
+        font-size: 13px
+      a:hover,a:focus
+        color: #fff
+        text-decoration: none
+        background-color: #17509E
+    li.current-menu-item
+      a
+        color: #fff!important
+    .current_page_parent.menu-item-has-children > a:before,.current_page_item.menu-item-has-children > a:before
+      content: "\e252"
+    .current_page_item
+      a
+        color: #fff
+        text-decoration: none
+        background-color: #17509E
+      ul
+        a
+          background-color: #F0F4FA
+          color: #17509D
+        a:hover,a:focus
+          color: #fff
+          text-decoration: none
+          background-color: #17509E
+.social
+  text-align: center
+  padding: 42px 0 59px 40px
+  font-size: 16px
+  .social-title
+    display: inline
+  .social-link
+    display: inline
+    margin-left: 15px
+    a:hover,a:focus,a:active
+      text-decoration: none
+    img
+      margin-right: 10px
+.footer-about
+  background-color: #F0F4FA
+//------------------end about page------------------------
+
+//--------------------news page----------------------------
+.news-image
+  background-position: 50%
+  background-size: cover
+.news-gnp
+  padding: 30px 0 0 0
+  .news-article
+    padding: 40px 30px 33px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.29)
+    .art-img
+      margin: 0 0 0 5px
+      img
+        width: 160px
+    .art-desc
+      padding: 3px 75px 0 10px
+      letter-spacing: -0.1px
+      .date
+        font-size: 16px
+        font-weight: 400
+        color: #B5B8C2
+      .art-title
+        font-size: 20px
+        font-weight: 700
+        line-height: 29px
+        a
+          color: #17509D
+          text-decoration: none
+      .art-text
+        font-size: 16px
+        font-weight: 400
+        line-height: 27px
+        margin: 0
+        a
+          color: #17509D
+          text-decoration: none
+  .menu-news-container
+    width: 77%
+    float: right
+    background-color: #F0F4FA
+    color: #17509E
+    font-size: 16px
+    font-weight: 700
+    margin: 40px 5px 0 0
+    padding: 0
+    .textwidget
+      ul
+        padding: 0 0 0 10px
+        li
+          ul
+            li
+              display: block
+    .cat-title
+      background-color: #17509E
+      color: #fff
+      font-size: 16px
+      text-transform: none
+      padding: 0 15px
+      border: 0
+      p
+        padding: 10px 0 9px 20px
+    .radio
+      padding: 8px 0 0 0
+      margin: 0
+      label
+        font-family: "LatoWeb", sans-serif
+        font-weight: 700
+        padding-left: 15px
+      input
+        display: none
+      label:before
+        content: ""
+        display: inline-block
+        height: 15px
+        width: 15px
+        margin: 0 15px 0 0
+        border-radius: 50%
+        border: 2px solid #B5B9C2
+        background: #fff
+      input[type="radio"]:checked + label::before
+        background: #18509D
+      .blue-label
+        width: 10px
+        height: 10px
+        .blue-circle
+          display: none
+  .news-categories-top
+    width: 100%
+    margin: 0 auto
+.radio input[type="radio"]
+  margin-left: -28px
+  color: #17509E
+.news1-gnp
+  margin-top: 110px
+  border-top: 4px solid #EFF3FA
+  padding: 44px 0 0 8px
+  letter-spacing: -.1px
+  .article
+    padding: 0 60px 0 0
+    .date
+      font-size: 16px
+      font-weight: 400
+      color: #B5B8C2
+      margin: 0
+    .title
+      margin: 20px 0
+      line-height: 40px
+      p
+        font-size: 24px
+        font-weight: 700
+    .text-article
+      p
+        margin-bottom: 27px
+        font-size: 16px
+        font-weight: 400
+        line-height: 28px
+      .text-article-t
+        font-size: 20px
+        margin-bottom: 1px
+  .news-categories
+    float: right
+    width: 77%
+    margin: 2px 10px 0 0
+    .title
+      font-size: 16px
+      font-weight: 700
+      border-bottom: 2px solid #DEE2ED
+    p
+      margin-bottom: 8px
+    ul
+      padding: 0
+      li
+        padding: 22px 0
+        font-size: 16px
+        font-weight: 700
+        line-height: 27px
+        border-bottom: 2px solid #DEE2ED
+        color: #17509E
+        list-style: none
+        a
+          text-decoration: none
+    .textwidget
+      padding: 22px 0
+      a
+        font-size: 16px
+        font-weight: 700
+        color: #B5B8C2
+        text-decoration: none
+//--------------------end news----------------
+//-------------------------recources--------------------
+.recources-image
+  background-position: 50%
+  background-size: cover
+.recources
+  padding: 60px 0 0 0
+  .news-title
+    padding: 6px 0 13px 5px
+  .rec-cont
+    padding: 0 52px 0 0
+    margin-bottom: 50px
+    .rec-art
+      padding: 0 0 33px 0
+      border-bottom: 1px solid rgba(0, 0, 0, 0.29)
+      .row
+        margin: 0
+    img
+      width: 100%
+      max-height: 150px
+      background-size: cover
+    .art-desc
+      padding: 3px 0 0 20px
+      letter-spacing: -0.1px
+      .date
+        font-size: 16px
+        font-weight: 400
+        color: #B5B8C2
+      .art-title
+        font-size: 16px
+        font-weight: 700
+        line-height: 29px
+        height: 116px
+        overflow: hidden
+        a
+          color: #17509D
+          text-decoration: none
+  .rec-right
+    padding: 2px 15px
+    .sidebar
+      padding: 0
+
+    .search
+      width: 82%
+      float: right
+      padding: 0
+      margin-bottom: 32px
+      button
+        float: right
+        width: 40px
+        height: 40px
+        background-color: #17509D
+        color: #fff
+        border: 0
+        border-radius: 0
+        span
+          font-size: 18px
+      .head_input
+        width: 255px!important
+        height: 40px
+        border-radius: 0
+        background-color: #F0F4FA
+        border: 0
+        padding-left: 15px
+        margin: 0!important
+    .sort-list-topics,.sort-list-country,.sort-list-region
+      li
+        padding: 0
+        label
+          display: flex
+          padding: 10px
+          width: 100%
+          cursor: pointer
+          margin: 0
+    .accordion
+      width: 80%
+      float: right
+      padding: 0
+      //.rec-search
+      //  width: 80%
+      //  float: right
+
+      .accordion-all
+        font-size: 16px
+        font-weight: 700
+        color: #fff
+        margin-bottom: 4px
+        .name
+          float: none
+          font-size: 16px
+          padding: 9px 10px
+          margin: 0 0 3px 0
+          display: block
+          span
+            float: right
+            padding: 5px 10px 0 0
+            font-size: 10px
+      .rec-list1
+        display: none
+        padding: 0
+        &.open
+          display: block
+          ul
+            width: 100%
+            padding: 0
+            li
+              width: 100%
+              padding: 0
+              display: block
+              .cat-item
+                list-style: none
+                height: 40px
+                background-color: rgba(23, 80, 158, 0.75)
+                padding: 7px 0
+                font-size: 16px
+                margin-bottom: 2px
+                color: #000
+                display: block
+                input
+                  margin: 4px 10px
+              input[type="submit"]
+                display: none
+      .rec-list2
+        display: none
+        padding: 0
+        &.open
+          display: block
+          ul
+            width: 100%
+            padding: 0
+            li
+              width: 100%
+              padding: 0
+              display: block
+              .cat-item
+                list-style: none
+                height: 40px
+                background-color: rgba(255, 212, 0, 0.72)
+                padding: 7px 0
+                font-size: 16px
+                margin-bottom: 2px
+                color: #000
+                input
+                  margin: 4px 10px
+              input[type="submit"]
+                display: none
+      .rec-list3
+        display: none
+        padding: 0
+        &.open
+          display: block
+          ul
+            width: 100%
+            padding: 0
+            li
+              width: 100%
+              padding: 0
+              display: block
+              .cat-item
+                list-style: none
+                height: 40px
+                background-color: rgba(207, 53, 46, 0.76)
+                padding: 7px 0
+                font-size: 16px
+                margin-bottom: 2px
+                color: #000
+                input
+                  margin: 4px 10px
+              input[type="submit"]
+                display: none
+      .blue
+        .name
+          background-color: #17509E
+      .yellow
+        .name
+          background-color: #FFD400
+      .red
+        .name
+          background-color: #CF352E
+  .panel-group
+    width: 82%
+    float: right
+    .panel-collapse
+      .panel-body
+        padding: 0
+        ul
+          li
+            span
+              margin-left: 20px
+          li:before
+            content: none
+  .panel-group .panel
+    border-radius: 0
+.panel-title a.collapsed:after ,.panel-title a:after
+  content: ""
+.panel-title
+  a
+    font-size: 16px
+    text-transform: none
+    text-decoration: none
+    span
+      font-size: 10px
+      padding: 6px 10px
+.single-recuorces
+  padding: 0
+  .back-to-previous
+    a
+      text-decoration: none
+      font-family: "LatoWeb", sans-serif
+      font-size: 16px
+      color: #B5B8C2
+      font-weight: 700
+.recourse-filter
+  float: right
+.link_container
+  padding: 10px 0
+  display: table
+  span
+    margin: 0
+    display: table-cell
+.link_container:before
+  content: ""
+  display: inline-block
+  height: 13px
+  width: 13px
+  margin: 0 15px 0 0
+  background-color: #fff
+  border-radius: 4px
+  vertical-align: middle
+.active .link_container
+  margin-left: 20px
+.active .link_container:before
+  font-family: 'Glyphicons Halflings'
+  content: "\e013"
+  color: #000000
+  display: inline-block
+  height: 13px
+  width: 13px
+  font-size: 11px
+  margin: 0 15px 0 0
+  vertical-align: middle
+  background-color: #fff
+  border-radius: 4px
+  line-height: 1
+@media (max-width: 1199px)
+  .article1
+    .image
+      padding-top: 89%
+    .desc
+      height: 107px
+  .article2
+    .desc
+      height: 108px
+      padding: 10px 0 0 15px
+      font-size: 17px
+  .navbar-default .navbar-nav > li > a
+    padding: 15px 15px
+  .navbar-default .navbar-nav > li > .dropdown-toggle
+    color: #000
+    padding: 15px 11px
+  .campaigns-big .com-big
+    padding: 22px
+  .about-gnp
+    .about-left
+      padding: 0 40px 0 15px
+    .download-book
+      img
+        width: 100%
+    .list-link
+      margin: 3px 0 0 0
+      float: right
+  .news-gnp
+    .news-article
+      .art-desc
+        padding: 3px 8px 0 25px
+  .news1-gnp
+    .article
+      padding: 0 30px 0 15px
+    .news-categories
+      width: 90%
+  .recources
+    .rec-cont
+      .rec-art
+        .rec-img
+          height: 114px
+        .art-desc
+          .art-title
+            line-height: 22px
+            height: 88px
+            margin: 0
+    .rec-right
+      .search
+        .head_input
+          width: 200px!important
+@media (max-width: 991px)
+  .navbar-default .navbar-nav > li > .dropdown-toggle
+    color: #000
+    padding: 15px 4px
+
+  .navbar-default .navbar-nav > li > a
+    padding: 15px 10px
+    font-size: 15px
+  .donate
+    margin: 0 10px 0 0
+  #bs-example-navbar-collapse-1
+    font-size: 16px
+    .caret
+      margin-left: 1px
+  .article1
+    .image
+      padding-top: 88%
+    .desc
+      height: 79px
+  .article2
+    .desc
+      height: 81px
+      font-size: 13px
+      padding: 10px 0 0 8px
+  .campaigns-big .com-big
+    padding: 18px
+  .campaigns-small
+    .com-link-small
+      margin: 0 5px 15px 0
+  .campaigns-right
+    .com-link-small
+      margin: 0 0 15px 5px
+  .about-gnp
+    .sidebar
+      .menu-about-container
+        width: 244px
+    .about-left
+      padding: 0 0 0 5px
+      .download-book
+        padding: 15px 0
+        font-size: 14px
+        .row
+          margin: 0
+        .book-title
+          padding: 2px 0 0 10px
+    .list-link
+      width: 255px
+  .news-gnp
+    padding: 30px 0 0 0
+    .news-article
+      padding: 30px 30px 23px
+      border-bottom: 1px solid #DDE1EC
+      .art-img
+        margin: 0 0 0 5px
+        img
+          width: 100%
+          height: auto
+      .art-desc
+        padding: 3px 0 0 17px
+        .date
+          font-size: 14px
+          margin: 0
+        .art-title
+          font-size: 18px
+          line-height: 24px
+          margin:  0 0 5px 0
+          a
+            color: #17509D
+        .art-text
+          font-size: 14px
+          line-height: 20px
+          margin: 0
+    .rec-cont
+      padding: 0 40px 0 0
+      margin-bottom: 35px
+      .rec-art
+        padding: 0 0 22px 0
+        .rec-img
+          height: 98px
+          background-size: cover
+          background-position: 50%
+        .art-desc
+          padding: 3px 0 0 10px
+          .art-title
+            font-size: 15px
+            line-height: 20px
+            height: 80px
+          .date
+            font-size: 12px
+  .recources
+    .rec-right
+      width: 100%
+      .search
+        width: 100%
+        .head_input
+          width: 180px!important
+      .accordion
+        .accordion-all
+          font-size: 15px
+    .panel-group
+      width: 100%
+@media (max-width: 767px)
+  header
+    display: block
+    height: auto
+  .mobile-width
+    display: block
+  .navbar-toggle.collapsed .top-bar
+    transform: rotate(0deg)
+  .navbar-toggle .top-bar
+    transform: rotate(45deg)
+    transform-origin: 7px 5px 0
+  .navbar-toggle .top-bar:active
+    margin: 0 20px
+  .navbar-toggle .icon-bar
+    transition: all 0.3s ease 0s
+    width: 30px
+    height: 3px
+  .navbar-toggle.collapsed .middle-bar
+    opacity: 1
+  .navbar-toggle .middle-bar
+    opacity: 0
+  .navbar-toggle.collapsed .bottom-bar
+    transform: rotate(0deg)
+  .navbar-toggle .bottom-bar
+    transform: rotate(-45deg)
+    transform-origin: 6px -1px 0
+  .owl-theme .owl-controls .owl-buttons .owl-prev
+    left: -30px
+  .owl-theme .owl-controls .owl-buttons .owl-next
+    right: -30px
+  .navbar-fixed-top
+    height: auto
+  ul.nav.navbar-nav
+    padding: 0 0 0 2%
+    display: block
+  #bs-example-navbar-collapse-1
+    margin-top: 20px
+    padding: 0
+    font-size: 16px
+    .caret
+      margin-left: 1px
+    .collapse-search-form
+      display: block
+      text-align: right
+      box-sizing: border-box
+      margin: 15px 15px 0 0
+      .head_input
+        right: 75px
+  .head_input.is-open
+    width: 200px
+  .navbar-nav
+    margin: 0
+    background-color: #fff
+  .list-collapse
+    width: 100%
+    position: absolute
+    border-bottom: #fff
+    padding: 0
+  .donate
+    color: #F3F3F3
+    background-color: #CF352D
+    font-weight: 700
+    font-size: 14px
+    border-radius: 0
+    border: 0
+    width: 70px
+    height: 30px
+    margin: 0 10px 0 0
+    span
+      display: none
+  .search-form
+    min-width: 0
+    display: none
+    float: none
+  .navbar-header
+    padding: 10px 0 0 15px
+    display: inline-block
+    .navbar-brand
+      height: 100%
+      padding: 0
+      float: none
+  .navbar-toggle
+    margin: 0 15px 10px
+  .donate_search
+    padding: 10px 15px
+  .donate
+    padding: 21px 25px
+    font-size: 17px
+  .navbar-default
+    .head_search
+      width: 60px
+      height: 60px
+      font-size: 20px
+  .header_form
+    width: 30px
+    height: 30px
+  .head_input
+    right: 30px
+  .main_photo
+    padding-bottom: 30px
+    .container
+      padding-left: 0
+      .row
+        margin: 0 -15px 0 15px
+    .photo-title p
+      font-size: 20px
+    .photo-link a
+      font-size: 15px
+    .white-line
+      margin-bottom: 30px
+  .news-updates 
+    padding: 35px 0 40px 0
+    .container
+      padding: 0 30px
+      .news-title
+        font-size: 20px
+      .article1
+        margin: 0
+        .desc
+          height: 79px
+          font-size: 18px
+      .article2
+        margin: 10px 0 0 0
+        .image
+          padding-top: 82%
+        .desc
+          height: auto
+          font-size: 19px
+          padding: 40px 0 0 40px
+  .red-form
+    padding: 30px 0
+    .red-form-title
+      font-size: 20px
+    .red-form-desc
+      font-size: 15px
+    .inputfield
+      width: 240px
+      height: 30px
+      display: block
+      margin: 10px auto
+      font-size: 15px
+    .subscribe
+      width: 90px
+      height: 30px
+      font-size: 15px
+  .footer
+    text-align: center
+    height: auto
+    padding: 0 0 20px
+    .footer-l
+      .navbar-header
+        display: inline-block
+      .anbi-logo
+        float: none
+    .footer-r
+      float: none
+  .about-gnp
+    padding: 0 0 30px 0
+    .about-left
+      padding: 0 15px
+      .download-book
+        padding: 15px 0
+        font-size: 16px
+        .book-title
+          padding: 2px 0 0 20px
+          .book-p
+            margin-bottom: 17%
+          .button-down
+            .downloud-link
+              padding: 5% 0
+              width: 60%
+    .list-link
+      width: 100%
+      float: none
+      text-align: center
+      a
+        display: inline-block
+        width: 100%
+        text-align: left
+  .about-gnp .sidebar .menu-about-container
+    width: 100%
+  .news-gnp
+    .menu-news-container
+      width: 100%
+    .news-categories
+      width: 100%
+      float: none
+      .textwidget
+        ul
+          padding: 0 0 0 10px
+          li
+            input[type ='submit']
+              display: none
+            ul
+              li
+                display: block
+  .news1-gnp .news-categories
+    width: 100%
+    float: none
+    margin: 0 auto
+  .recources
+    .rec-cont
+      padding: 0 40px 0 40px
+      margin-bottom: 35px
+      .rec-art
+        padding: 0 0 22px 0
+        .rec-img
+          height: 150px
+          width: 120px
+          background-size: cover
+          background-position: 50%
+        .art-desc
+          padding: 3px 0 0 0
+          .art-title
+            font-size: 16px
+            line-height: 29px
+            height: 116px
+          .date
+            font-size: 15px
+    .rec-right
+      width: 100%
+      margin: 0 auto
+      .search
+        margin: 8px 0
+        width: 100%
+        text-align: right
+        input
+          width: 160px!important
+      .accordion
+        width: 100%
+        .accordion-all
+          font-size: 15px
+  .recourse-filter
+    float: none
+@media (max-width: 668px)
+  .main-image
+    .page-title
+      font-size: 40px
+  .news-updates
+    .container
+      .article2
+        .desc
+          font-size: 17px
+          padding: 30px 0 0 30px
+  .about-gnp
+    .about-left
+      .title-article
+        font-size: 25px
+      .about-desc
+        font-size: 15px
+        line-height: 25px
+      .download-book
+        .book-title
+          padding: 2px 0 0 9px
+  .about-image
+    background-position: 65% 20%
+    background-size: cover
+  .news-gnp
+    .news-article
+      .art-desc
+        .date
+          font-size: 13px
+        .art-title
+          font-size: 16px
+          line-height: 24px
+          margin: 0
+  .social
+    padding: 25px 0 40px 0
+    font-size: 14px
+    .social-link
+      img
+        margin-right: 5px
+        width: 30px
+  .recources
+    .rec-cont
+      .rec-art
+        .art-desc
+          padding: 3px 0 0 20px
+@media (max-width: 568px)
+  .news-updates
+    .container
+      .article2
+        .desc
+          font-size: 16px
+          padding: 15px 0 0 20px
+  .about-gnp
+    .about-left
+      .download-book
+        padding: 15px 0
+        font-size: 14px
+        .book-title
+          padding: 2px 0 0 9px
+          .button-down
+            padding: 0
+            .downloud-link
+              padding: 5% 0
+              width: 60%
+      p
+        margin: 0 0 5px
+  .news1-gnp
+    .news-categories
+      .title
+        font-size: 15px
+      .categ-link
+        font-size: 14px
+        line-height: 20px
+        padding: 15px 0
+      .back-to
+        font-size: 14px
+        padding: 15px 0
+    .article
+      .date
+        font-size: 14px
+      .title
+        font-size: 20px
+        line-height: 30px
+      .text-article
+        font-size: 14px
+        line-height: 20px
+  .recources
+    .rec-cont
+      padding: 0
+      margin-bottom: 25px
+      .rec-art
+        padding: 0 0 22px 0
+        .rec-img
+          height: 135px
+          width: 108px
+          background-size: cover
+          background-position: 50%
+        .art-desc
+          padding: 3px 0 0 23px
+          .art-title
+            font-size: 15px
+            line-height: 25px
+            height: 100px
+          .date
+            font-size: 14px
+@media (max-width: 415px)
+  .news-updates
+    .container
+      .article2
+        .desc
+          font-size: 14px
+          padding: 8px 0 0 10px
+  .about-gnp
+    .about-left
+      .download-book
+        font-size: 12px
+        .book-title
+          padding: 2px 0 0 5px
+      p
+        margin: 0
+  .recources
+    .rec-cont
+      padding: 0
+      margin-bottom: 25px
+      .rec-art
+        padding: 0 0 22px 0
+        .rec-img
+          height: 122px
+          width: 97px
+          background-size: cover
+          background-position: 50%
+        .art-desc
+          padding: 3px 0 0 25px
+          .art-title
+            font-size: 15px
+            line-height: 20px
+            height: 80px
+          .date
+            font-size: 14px
+
+@media (max-width: 350px)
+  .main_photo .photo-link a
+    font-size: 14px
+    padding: 15px 10px 15px 10px
+    span
+      margin-right: 10px
+  .news-updates
+    .container
+      .article2
+        .desc
+          font-size: 14px
+          padding: 4px 0 0 5px
+          line-height: 1
+  .about-gnp
+    padding: 0 10px 20px 10px
+    .about-left
+      .download-book
+        padding: 5px
+        font-size: 10px
+        .book-title
+          padding: 2px 0 0 5px
+      p
+        margin: 0
+  .recources
+    .rec-cont
+      padding: 0
+      margin-bottom: 25px
+      .rec-art
+        padding: 0 0 22px 0
+        .rec-img
+          height: 97px
+          width: 78px
+          background-size: cover
+          background-position: 50%
+        .art-desc
+          padding: 3px 0 0 35px
+          .art-title
+            font-size: 14px
+            line-height: 17px
+            height: 68px
+          .date
+            font-size: 12px
+.msry-banner-container
+  margin-left: -12.5px
+.item-twitter
+  overflow: hidden
